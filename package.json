@@ -12,6 +12,14 @@
   ],
   "category": "Utility",
   "dependencies": {
-    "com.unity.mathematics": "1.2.6"
-  }
+    "com.klazapp.editor.helper": "1.0.0"
+  },
+  "author": {
+      "name": "Klazapp",
+      "email": "klazapp@klazapp.com",
+      "url": "https://www.klazapp.com"
+    },
+    "documentationUrl": "https://github.com/klazapp/Scripting-Define-Symbols-Public",
+    "changelogUrl": "https://github.com/klazapp/Scripting-Define-Symbols-Public",
+    "licensesUrl": "https://github.com/klazapp/Scripting-Define-Symbols-Public"
 }
