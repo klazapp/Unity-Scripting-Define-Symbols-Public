@@ -1,6 +1,6 @@
 {
-  "name": "com.klazapp.editor.helper",
-  "displayName": "Klazapp Editor Helper",
+  "name": "com.klazapp.scripting.define.symbols",
+  "displayName": "Klazapp Scripting Define Symbols",
   "version": "1.0.0",
   "unity": "2022.3",
   "description": "This custom editor helper tool development",
