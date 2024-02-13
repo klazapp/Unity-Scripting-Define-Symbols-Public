@@ -1,0 +1,18 @@
+{
+    "name": "com.klazapp.scripting.define.symbols.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:aa002eef81f9741f9a6809ae878e69e2"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
