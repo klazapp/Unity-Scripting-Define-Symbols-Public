@@ -12,6 +12,11 @@ The Unity Scripting Define Symbol Editor, developed by `com.Klazapp`, is a power
 ## Dependencies
 - Requires Unity 2020.3 LTS or newer to ensure compatibility and stability.
 
+## Compatibility
+| Compatibility | URP | BRP | HDRP |
+|---------------|-----|-----|------|
+| Compatible    | ✔️   | ✔️   | ✔️    |
+
 ## Installation
 1. Download the package from the [GitHub Releases page](https://github.com/klazapp/unity-scripting-define-symbol-editor/releases).
 2. Import the package into your Unity project via `Assets -> Import Package -> Custom Package`.
