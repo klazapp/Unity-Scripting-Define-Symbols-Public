@@ -1,36 +1,42 @@
-# Inspector Utility for Unity
+# Unity Scripting Define Symbol Editor
 
 ## Introduction
-The `Scripting Define Symbols` utility, part of the `com.Klazapp.Utility` namespace, are compiler directives that allow you to define custom symbols that can be used to include or exclude specific sections of code during compilation. These symbols provide a way to conditionally compile different parts of your code based on the defined symbols.
+The Unity Scripting Define Symbol Editor, developed by `com.Klazapp`, is a powerful Unity Editor extension designed to enhance the management of scripting define symbols. This tool simplifies the process of adding, modifying, and removing conditional compilation symbols specific to various build targets, streamlining the workflow for handling project settings directly within the Unity Editor.
 
 ## Features
-- Scripting Define Symbols enable conditional compilation, allowing you to include or exclude specific sections of code based on whether certain symbols are defined. This can be useful for platform-specific code, debug-specific features, or feature toggles.
-- Symbols can be defined to include additional logging, debugging, or testing functionality in development builds while excluding them from release builds. This helps in debugging and testing your game or application during development without affecting the final build size or performance.
-  
-## Dependencies
-To use `Scripting Define Symbols`, certain dependencies are required. Ensure these are included in your Unity project.
-- **Unity Version**: Minimum Unity 2020.3 LTS.
-- **Repository**: [LogMessage Unity Editor Helper](https://github.com/klazapp/Unity-Editor-Helper-Public.git)
-- Unity Engine dll
-- Unity Editor dll
+- **Symbol Management**: Allows for the addition, application, and removal of scripting define symbols directly through the Unity Editor.
+- **Target-Specific Symbols**: Provides the capability to manage symbols for specific build targets such as Android and iOS, with the option to extend support to other platforms.
+- **Symbol Validation**: Ensures that only valid symbols are added or modified, preventing potential build errors.
+- **Dynamic Discovery**: Automatically detects and lists all scripting define symbols used within the project, making them easily manageable through the editor interface.
 
-## Compatibility
-| Compatibility        | URP | BRP | HDRP |
-|----------------------|-----|-----|------|
-| Compatible           | ✔️  | ✔️  | ✔️   |
+## Dependencies
+- Requires Unity 2020.3 LTS or newer to ensure compatibility and stability.
 
 ## Installation
-1. Open the Unity Package Manager (`Window` > `Package Manager`).
-2. Click `+`, select `Add package from git URL...`, and enter `https://github.com/klazapp/Unity-Scripting-Define-Symbols.git`.
-3. Unity will download and make the package available in your project.
+1. Download the package from the [GitHub Releases page](https://github.com/klazapp/unity-scripting-define-symbol-editor/releases).
+2. Import the package into your Unity project via `Assets -> Import Package -> Custom Package`.
+3. Access the tool from the Unity menu bar at `Klazapp -> Tools -> Scripting Define Symbols Editor`.
 
 ## Usage
-```csharp
-Write Something here
-```
+To use the Scripting Define Symbol Editor:
+1. Open the editor window by navigating to `Klazapp -> Tools -> Scripting Define Symbols Editor` in the Unity menu.
+2. To add a new symbol:
+   - Enter the symbol name in the provided input field.
+   - Click `Apply & Create` to add the symbol to the selected build targets.
+3. To manage existing symbols:
+   - Use the `Apply` button to add the symbol to the build target’s defined symbols.
+   - Use the `Remove` button to delete the symbol from the build target’s defined symbols.
+
+## Customization
+Symbols are prefixed by default with `KLAZAPP_` to ensure they are distinct from other project symbols. This prefix can be modified in the script to align with different naming conventions as required by the project.
+
+## Known Issues
+- There is no automatic synchronization of symbols across different workstations or version control systems, requiring manual management of the `ProjectSettings` file.
 
 ## To-Do List (Future Features)
-- 
+- Expand support to include additional build targets.
+- Enhance the user interface for better aesthetics and usability.
+- Implement features for automatic synchronization with version control systems.
 
 ## License
-This utility is released under the [MIT License](LICENSE).
+This package is freely distributed under the MIT License, providing flexibility for both personal and commercial use. See the LICENSE file for more details.
